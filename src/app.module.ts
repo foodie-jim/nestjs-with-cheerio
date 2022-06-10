@@ -4,7 +4,6 @@ import { MusicChartModule } from './music-chart/music-chart.module';
 import { MelonMusicChartScraperModule } from './music-chart-scraper/melon-music-chart-scraper/melon-music-chart-scraper.module';
 import { MusicChartDatabaseModule } from './music-chart-database/music-chart-database.module';
 import { GenieMusicChartScraperModule } from './music-chart-scraper/genie-music-chart-scraper/genie-music-chart-scraper.module';
-import { VibeMusicChartScraperModule } from './music-chart-scraper/vibe-music-chart-scraper/vibe-music-chart-scraper.module';
 
 @Module({
   imports: [
@@ -16,7 +15,6 @@ import { VibeMusicChartScraperModule } from './music-chart-scraper/vibe-music-ch
     MelonMusicChartScraperModule,
     MusicChartDatabaseModule,
     GenieMusicChartScraperModule,
-    VibeMusicChartScraperModule,
   ],
 })
 export class AppModule {}

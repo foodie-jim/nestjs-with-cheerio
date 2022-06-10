@@ -23,8 +23,8 @@ export class MelonMusicChartScraperService implements MusicChartScraper {
   readonly chartType = MusicChartType.MELON;
   private called = 1;
 
-  //@Cron(CronExpression.EVERY_30_SECONDS)
-  @Cron(CronExpression.EVERY_30_MINUTES)
+  @Cron(CronExpression.EVERY_5_MINUTES)
+  //@Cron(CronExpression.EVERY_30_MINUTES)
   async scrapSongs() {
     try {
       this.logger.log(
