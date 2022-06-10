@@ -7,7 +7,7 @@ async function bootstrap() {
   const loggerLevel =
     process.env.NODE_ENV === 'prod'
       ? ['log', 'error', 'warn']
-      : ['log', 'error', 'warn', 'debug'];
+      : ['log', 'error', 'warn', 'debug', 'verbose'];
 
   const app = await NestFactory.create(AppModule, {
     logger: loggerLevel as any,
